@@ -1,0 +1,18 @@
+Dirmirror
+
+This program allows one to make an exact copy of a given directory structure, 
+ignoring all files and symlinks. If the target directory is a subdirectory
+of the source directory (regardless of depth), the target directory will not
+be mirrored.
+
+TO COMPILE:
+
+    g++ -o dm dirmirror.cpp
+
+This program has been tested on Linux (x86, amd64), FreeBSD 5.3-RELEASE, and
+Mac OS X 10.4 (Tiger).
+
+LICENSE:
+
+    See the license header at the top of each source file for licensing
+    information.

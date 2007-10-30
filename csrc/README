@@ -1,0 +1,12 @@
+This directory (csrc/) contains the old (and less efficient (and probably 
+broken)) C source code for dirmirror.  It is left in the distribution in hopes 
+that eventually it will be fixed.
+
+The major planned changes for the C source code are as follows:
+
+* Use a queue structure instead of recursion.  dirmirror generates MANY stack
+  frames when operating over a large directory structure.
+* Remove dependence on dirent.h so that the program is written in 100% ANSI
+  C.
+
+Any patches to this end are appreciated.

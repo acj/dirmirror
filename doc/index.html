@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>dirmirror: A directory structure mirroring utility.</title>
+</head>
+<body>
+<h1>dirmirror: A directory structure mirroring utility.</h1>
+
+<p>
+This program allows one to make an exact copy of a given directory structure,
+ignoring all files and symlinks. If the target directory is a subdirectory
+of the source directory (regardless of depth), the target directory will not
+be mirrored.
+</p>
+
+<h2>How is it useful?</h2>
+<p>Sometimes one wants to duplicate a large (or small) directory tree without
+duplicating all of the files contained in the hierarchy. This tool allows
+one to do this with minimal effort and acts quasi-intelligently to prevent
+infinite copying loops that can occur in certain situations.
+</p>
+
+<h2>How do I use it?</h2>
+
+<p>
+To build the program, use the following command:
+<blockquote><code>g++ -o dirmirror dirmirror.cpp</code></blockquote>
+
+The syntax for <code>dirmirror</code> is as follows:
+<blockquote>
+    <code>dirmirror <source directory> <target directory></code>
+</blockquote>
+
+<h2>Where can I get it?</h2>
+
+<p>
+The source code for <code>dirmirror</code> is available for download here.  
+[<a href="dirmirror-0.1.tar.bz2">dirmirror-0.1.tar.bz2</a>]
+</p>
+
+<h2>Who's responsible for this?</h2>
+
+<p>
+<code>dirmirror</code> was written by <a href="http://linuxguy.org/">Adam 
+Jensen</a> &lt;ajensen at linuxguy dot org&gt;.
+</p>
+
+</body>
+</html>
